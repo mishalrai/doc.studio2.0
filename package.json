@@ -1,0 +1,16 @@
+{
+  "name": "Studio 2.0",
+  "version": "1.0.0",
+  "description": "Studio 2.0 documentation site",
+  "main": "index.html",
+  "scripts": {
+    "start": "node-sass assets/scss/doc.scss assets/css/doc.css --watch",
+    "build": "webpack --progress --mode=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "studio 2.0"
+  ],
+  "author": "Min Rai",
+  "license": "ISC"
+}

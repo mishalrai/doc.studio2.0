@@ -1,0 +1,7 @@
+@mixin section($gap-y: 5rem) {
+  & {
+    padding-top: $gap-y;
+    padding-bottom: $gap-y;
+    border-bottom: 1px solid #ddd;
+  }
+}

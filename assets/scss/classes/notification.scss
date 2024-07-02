@@ -1,0 +1,49 @@
+$icon-gap-right: $spacer * 3;
+
+.notification {
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+
+  .icon {
+    margin-right: $icon-gap-right;
+  }
+
+  &.info {
+    background-color: #e9f2ff;
+
+    .icon {
+      svg {
+        fill: #1f7cfc;
+      }
+    }
+  }
+
+  &.error {
+    background-color: #ffeceb;
+    .icon {
+      svg {
+        fill: #be403f;
+      }
+    }
+  }
+
+  &.warning {
+    background-color: #fff7d6;
+    .icon {
+      svg {
+        fill: #d96c2f;
+      }
+    }
+  }
+
+  &.note {
+    background-color: #f3f0ff;
+
+    .icon {
+      svg {
+        fill: #7d73dd;
+      }
+    }
+  }
+}

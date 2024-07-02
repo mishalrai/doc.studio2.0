@@ -1,0 +1,43 @@
+@mixin header(
+  $height: 90px,
+  $left-section-width: 300px,
+  $shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075),
+  $gap: 30px,
+  $fixed-header: true,
+  $z-index: 9,
+  $background-color: #fff
+) {
+  & {
+    display: flex;
+    height: $height;
+    align-items: center;
+    box-shadow: $shadow;
+    padding-left: $gap;
+    padding-right: $gap;
+    background-color: $background-color;
+
+    @if ($fixed-header) {
+      & {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: $z-index;
+
+        + * {
+          margin-top: $height;
+        }
+      }
+    }
+
+    &__left-section {
+      width: $left-section-width;
+    }
+
+    &__right-section {
+      flex-grow: 1;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

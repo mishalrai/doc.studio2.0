@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio 2.0</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/vendors/fancybox/fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/doc.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__left-section">
+            <h5>DOCUMENTATION</h5>
+        </div>
+
+        <div class="header__right-section">
+
+            <div class="header__right">
+                <svg width="70" viewBox="0 0 334 208" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.17999 0.279999H34.9V153.71H2.17999V0.279999Z" fill="#231F20" />
+                    <path d="M65.11 0.279999H97.83V153.71H65.11V0.279999Z" fill="#231F20" />
+                    <path
+                        d="M257.1 33.28C281.21 33.28 300.82 52.89 300.82 77C300.82 101.11 281.21 120.72 257.1 120.72C232.99 120.72 213.38 101.11 213.38 77C213.38 52.89 232.99 33.28 257.1 33.28ZM257.1 0.279999C214.73 0.279999 180.38 34.63 180.38 77C180.38 119.37 214.73 153.72 257.1 153.72C299.47 153.72 333.82 119.37 333.82 77C333.82 34.63 299.47 0.279999 257.1 0.279999Z"
+                        fill="#231F20" />
+                    <path
+                        d="M146.91 121C155.95 121 163.27 128.32 163.27 137.36C163.27 146.4 155.95 153.72 146.91 153.72C137.87 153.72 130.55 146.4 130.55 137.36C130.55 128.32 137.87 121 146.91 121Z"
+                        fill="#231F20" />
+                    <path d="M97.83 148.72C97.83 148.72 97.72 151.21 99.03 153.72H97.83V148.72Z" fill="white" />
+                    <path d="M65.11 148.72C65.11 148.72 65.22 151.21 63.91 153.72H65.11V148.72Z" fill="white" />
+                    <path d="M97.83 5.28C97.83 5.28 97.72 2.79 99.03 0.279999H97.83V5.28Z" fill="white" />
+                    <path d="M65.11 5.28C65.11 5.28 65.22 2.79 63.91 0.279999H65.11V5.28Z" fill="white" />
+                    <path d="M34.91 148.72C34.91 148.72 34.8 151.21 36.11 153.72H34.91V148.72Z" fill="white" />
+                    <path d="M2.17998 148.72C2.17998 148.72 2.28998 151.21 0.97998 153.72H2.17998V148.72Z"
+                        fill="white" />
+                    <path d="M34.91 5.28C34.91 5.28 34.8 2.79 36.11 0.279999H34.91V5.28Z" fill="white" />
+                    <path d="M2.17998 5.28C2.17998 5.28 2.28998 2.79 0.97998 0.279999H2.17998V5.28Z" fill="white" />
+                    <path
+                        d="M7.60205 203.115C6.77946 203.115 5.98779 202.994 5.22705 202.753C4.46631 202.512 3.73958 202.141 3.04688 201.64V198.755H4.46631L4.77246 200.879C5.17448 201.126 5.61051 201.318 6.08057 201.454C6.55062 201.59 7.05778 201.658 7.60205 201.658C8.22054 201.658 8.74316 201.566 9.16992 201.38C9.60286 201.188 9.93376 200.925 10.1626 200.591C10.3914 200.257 10.5059 199.868 10.5059 199.422C10.5059 199.008 10.4069 198.643 10.209 198.328C10.0111 198.012 9.68327 197.737 9.22559 197.502C8.77409 197.261 8.1556 197.051 7.37012 196.871C6.44238 196.655 5.6569 196.367 5.01367 196.008C4.37663 195.644 3.89111 195.204 3.55713 194.691C3.22933 194.172 3.06543 193.578 3.06543 192.91C3.06543 192.205 3.25098 191.574 3.62207 191.017C3.99935 190.461 4.52197 190.021 5.18994 189.7C5.85791 189.378 6.63721 189.217 7.52783 189.217C8.47412 189.217 9.30908 189.363 10.0327 189.653C10.7625 189.938 11.3625 190.284 11.8325 190.693V193.392H10.4131L10.1069 191.463C9.82861 191.24 9.48226 191.054 9.06787 190.906C8.65348 190.757 8.14014 190.683 7.52783 190.683C7.0083 190.683 6.55062 190.776 6.15479 190.962C5.75895 191.141 5.44971 191.394 5.22705 191.722C5.00439 192.05 4.89307 192.437 4.89307 192.882C4.89307 193.272 4.99202 193.612 5.18994 193.902C5.39404 194.193 5.72184 194.45 6.17334 194.672C6.63102 194.889 7.24023 195.093 8.00098 195.285C9.4235 195.637 10.4997 196.16 11.2295 196.853C11.9655 197.539 12.3335 198.39 12.3335 199.404C12.3335 200.128 12.1387 200.771 11.749 201.334C11.3594 201.89 10.8089 202.326 10.0977 202.642C9.39258 202.957 8.56071 203.115 7.60205 203.115ZM24.6605 202.92V201.751L26.1727 201.491V190.795H23.1112L22.8421 192.669H21.4691V189.412H32.6947V192.669H31.3402L31.0619 190.795H28.0003V201.491L29.5125 201.751V202.92H24.6605ZM48.0368 203.115C47.1091 203.115 46.2803 202.932 45.5505 202.568C44.8207 202.203 44.2455 201.683 43.8249 201.009C43.4043 200.329 43.194 199.515 43.194 198.569V190.85L41.6818 190.59V189.412H46.5339V190.59L45.0217 190.85V198.569C45.0217 199.243 45.1485 199.809 45.402 200.267C45.6618 200.724 46.0205 201.071 46.4782 201.306C46.9359 201.535 47.4647 201.649 48.0646 201.649C48.6707 201.649 49.2057 201.535 49.6696 201.306C50.1397 201.077 50.5046 200.734 50.7643 200.276C51.0303 199.818 51.1633 199.249 51.1633 198.569V190.85L49.6511 190.59V189.412H54.5031V190.59L52.9909 190.85V198.569C52.9909 199.546 52.7837 200.375 52.3693 201.055C51.9611 201.729 51.3859 202.243 50.6437 202.595C49.9015 202.942 49.0326 203.115 48.0368 203.115ZM63.314 202.92V201.751L64.8262 201.491V190.85L63.314 190.59V189.412H64.8262H68.6021C69.7958 189.412 70.8348 189.697 71.7193 190.266C72.6099 190.835 73.3026 191.617 73.7974 192.613C74.2922 193.609 74.5396 194.747 74.5396 196.027V196.315C74.5396 197.564 74.3015 198.69 73.8252 199.692C73.349 200.687 72.6717 201.476 71.7935 202.057C70.9214 202.632 69.8885 202.92 68.6948 202.92H63.314ZM66.6538 201.491H68.6021C69.4556 201.491 70.1885 201.259 70.8008 200.796C71.4131 200.325 71.8832 199.701 72.211 198.922C72.5449 198.136 72.7119 197.267 72.7119 196.315V196.008C72.7119 195.025 72.5449 194.147 72.211 193.374C71.8832 192.594 71.4131 191.979 70.8008 191.527C70.1885 191.076 69.4556 190.85 68.6021 190.85H66.6538V201.491ZM83.3041 202.92V201.751L84.8163 201.491V190.85L83.3041 190.59V189.412H88.1561V190.59L86.6439 190.85V201.491L88.1561 201.751V202.92H83.3041ZM102.589 203.115C101.717 203.115 100.935 202.948 100.242 202.614C99.5492 202.28 98.9585 201.81 98.4699 201.204C97.9875 200.591 97.6164 199.868 97.3566 199.033C97.1031 198.198 96.9763 197.276 96.9763 196.268V196.073C96.9763 195.071 97.1031 194.153 97.3566 193.318C97.6164 192.477 97.9875 191.75 98.4699 191.138C98.9585 190.526 99.5492 190.052 100.242 189.718C100.935 189.384 101.717 189.217 102.589 189.217C103.511 189.217 104.321 189.384 105.02 189.718C105.719 190.052 106.303 190.526 106.773 191.138C107.249 191.75 107.608 192.477 107.849 193.318C108.091 194.153 108.211 195.071 108.211 196.073V196.268C108.211 197.276 108.091 198.198 107.849 199.033C107.608 199.868 107.249 200.591 106.773 201.204C106.303 201.81 105.719 202.28 105.02 202.614C104.321 202.948 103.511 203.115 102.589 203.115ZM102.589 201.593C103.486 201.593 104.21 201.371 104.76 200.925C105.317 200.48 105.725 199.859 105.985 199.061C106.244 198.257 106.374 197.326 106.374 196.268V196.055C106.374 195.003 106.241 194.082 105.975 193.29C105.716 192.492 105.307 191.871 104.751 191.425C104.194 190.974 103.474 190.748 102.589 190.748C101.779 190.748 101.092 190.974 100.529 191.425C99.9667 191.877 99.5399 192.502 99.2492 193.299C98.9585 194.091 98.8132 195.01 98.8132 196.055V196.268C98.8132 197.32 98.9585 198.247 99.2492 199.051C99.5399 199.849 99.9667 200.474 100.529 200.925C101.092 201.371 101.779 201.593 102.589 201.593ZM132.503 202.92V201.751L134.016 201.491V190.795H130.954L130.685 192.669H129.312V189.412H140.537V192.669H139.183L138.905 190.795H135.843V201.491L137.355 201.751V202.92H132.503ZM153.987 202.92L150.833 190.73L149.692 190.59V189.412H154.071V190.59L152.67 190.804L154.432 198.235L154.841 199.97L154.896 199.979L155.434 198.244L158.153 189.412H159.758L162.504 198.244L163.032 200.081H163.088L163.571 198.244L165.315 190.804L163.802 190.59V189.412H168.107V190.59L167.04 190.73L164.016 202.92H162.281L159.349 193.568L158.978 192.205H158.923L158.561 193.568L155.62 202.92H153.987ZM181.937 203.115C181.065 203.115 180.283 202.948 179.59 202.614C178.897 202.28 178.307 201.81 177.818 201.204C177.336 200.591 176.964 199.868 176.705 199.033C176.451 198.198 176.324 197.276 176.324 196.268V196.073C176.324 195.071 176.451 194.153 176.705 193.318C176.964 192.477 177.336 191.75 177.818 191.138C178.307 190.526 178.897 190.052 179.59 189.718C180.283 189.384 181.065 189.217 181.937 189.217C182.859 189.217 183.669 189.384 184.368 189.718C185.067 190.052 185.651 190.526 186.121 191.138C186.597 191.75 186.956 192.477 187.197 193.318C187.439 194.153 187.559 195.071 187.559 196.073V196.268C187.559 197.276 187.439 198.198 187.197 199.033C186.956 199.868 186.597 200.591 186.121 201.204C185.651 201.81 185.067 202.28 184.368 202.614C183.669 202.948 182.859 203.115 181.937 203.115ZM181.937 201.593C182.834 201.593 183.558 201.371 184.108 200.925C184.665 200.48 185.073 199.859 185.333 199.061C185.592 198.257 185.722 197.326 185.722 196.268V196.055C185.722 195.003 185.589 194.082 185.323 193.29C185.064 192.492 184.655 191.871 184.099 191.425C183.542 190.974 182.822 190.748 181.937 190.748C181.127 190.748 180.44 190.974 179.878 191.425C179.315 191.877 178.888 192.502 178.597 193.299C178.307 194.091 178.161 195.01 178.161 196.055V196.268C178.161 197.32 178.307 198.247 178.597 199.051C178.888 199.849 179.315 200.474 179.878 200.925C180.44 201.371 181.127 201.593 181.937 201.593ZM208.521 202.92V201.751L210.033 201.491V190.85L208.521 190.59V189.412H210.033H214.727C215.692 189.412 216.515 189.582 217.195 189.922C217.875 190.256 218.395 190.727 218.754 191.333C219.112 191.939 219.292 192.647 219.292 193.457C219.292 194.274 219.112 194.985 218.754 195.591C218.395 196.197 217.875 196.667 217.195 197.001C216.515 197.335 215.692 197.502 214.727 197.502H211.861V201.491L213.373 201.751V202.92H208.521ZM211.861 196.073H214.727C215.643 196.073 216.326 195.829 216.778 195.34C217.235 194.846 217.464 194.224 217.464 193.476C217.464 192.727 217.235 192.103 216.778 191.602C216.326 191.101 215.643 190.85 214.727 190.85H211.861V196.073ZM233.725 203.115C232.853 203.115 232.07 202.948 231.378 202.614C230.685 202.28 230.094 201.81 229.606 201.204C229.123 200.591 228.752 199.868 228.492 199.033C228.239 198.198 228.112 197.276 228.112 196.268V196.073C228.112 195.071 228.239 194.153 228.492 193.318C228.752 192.477 229.123 191.75 229.606 191.138C230.094 190.526 230.685 190.052 231.378 189.718C232.07 189.384 232.853 189.217 233.725 189.217C234.646 189.217 235.456 189.384 236.155 189.718C236.854 190.052 237.439 190.526 237.909 191.138C238.385 191.75 238.744 192.477 238.985 193.318C239.226 194.153 239.347 195.071 239.347 196.073V196.268C239.347 197.276 239.226 198.198 238.985 199.033C238.744 199.868 238.385 200.591 237.909 201.204C237.439 201.81 236.854 202.28 236.155 202.614C235.456 202.948 234.646 203.115 233.725 203.115ZM233.725 201.593C234.621 201.593 235.345 201.371 235.896 200.925C236.452 200.48 236.86 199.859 237.12 199.061C237.38 198.257 237.51 197.326 237.51 196.268V196.055C237.51 195.003 237.377 194.082 237.111 193.29C236.851 192.492 236.443 191.871 235.886 191.425C235.33 190.974 234.609 190.748 233.725 190.748C232.914 190.748 232.228 190.974 231.665 191.425C231.102 191.877 230.676 192.502 230.385 193.299C230.094 194.091 229.949 195.01 229.949 196.055V196.268C229.949 197.32 230.094 198.247 230.385 199.051C230.676 199.849 231.102 200.474 231.665 200.925C232.228 201.371 232.914 201.593 233.725 201.593ZM248.167 202.92V201.751L249.679 201.491V190.85L248.167 190.59V189.412H253.019V190.59L251.507 190.85V201.491L253.019 201.751V202.92H248.167ZM261.96 202.92V201.751L263.472 201.491V190.85L261.96 190.59V189.412H263.472H265.318L271.942 199.942L271.998 199.923V190.85L270.337 190.59V189.412H273.677H275.189V190.59L273.677 190.85V202.92H272.007L265.207 192.335L265.151 192.353V201.491L266.812 201.751V202.92H261.96ZM287.451 202.92V201.751L288.963 201.491V190.795H285.902L285.633 192.669H284.26V189.412H295.485V192.669H294.131L293.853 190.795H290.791V201.491L292.303 201.751V202.92H287.451ZM322.227 203.115C321.355 203.115 320.572 202.948 319.88 202.614C319.187 202.28 318.596 201.81 318.108 201.204C317.625 200.591 317.254 199.868 316.994 199.033C316.741 198.198 316.614 197.276 316.614 196.268V196.073C316.614 195.071 316.741 194.153 316.994 193.318C317.254 192.477 317.625 191.75 318.108 191.138C318.596 190.526 319.187 190.052 319.88 189.718C320.572 189.384 321.355 189.217 322.227 189.217C323.148 189.217 323.959 189.384 324.658 189.718C325.356 190.052 325.941 190.526 326.411 191.138C326.887 191.75 327.246 192.477 327.487 193.318C327.728 194.153 327.849 195.071 327.849 196.073V196.268C327.849 197.276 327.728 198.198 327.487 199.033C327.246 199.868 326.887 200.591 326.411 201.204C325.941 201.81 325.356 202.28 324.658 202.614C323.959 202.948 323.148 203.115 322.227 203.115ZM322.227 201.593C323.124 201.593 323.847 201.371 324.398 200.925C324.954 200.48 325.363 199.859 325.622 199.061C325.882 198.257 326.012 197.326 326.012 196.268V196.055C326.012 195.003 325.879 194.082 325.613 193.29C325.353 192.492 324.945 191.871 324.388 191.425C323.832 190.974 323.111 190.748 322.227 190.748C321.417 190.748 320.73 190.974 320.167 191.425C319.604 191.877 319.178 192.502 318.887 193.299C318.596 194.091 318.451 195.01 318.451 196.055V196.268C318.451 197.32 318.596 198.247 318.887 199.051C319.178 199.849 319.604 200.474 320.167 200.925C320.73 201.371 321.417 201.593 322.227 201.593Z"
+                        fill="#231F20" />
+                </svg>
+            </div>
+
+            <div class="header__left">
+                <a class="icon-link btn btn-link" href="https://www.studiotwopointo.com/" target="_blank">
+                    STUDIO 2.0 Site
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="dynamic-section">
+
+        <aside class="dynamic-section__navigation">
+            <nav>
+                <ul id="site-navigation">
+                    <li class="category">GETTING STARTED</li>
+                    <li><a href="#getting-started">Basic Info</a></li>
+
+                    <li class="category">Home page Settings</li>
+                    <li><a href="#logo">Logo</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#social-media-links">Social media links</a></li>
+                    <li><a href="#banner-slider">Banner Slider</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#latest-projects">Latest Projects</a></li>
+                    <li><a href="#meet-out-team">Meet Our Team</a></li>
+                    <li><a href="#client-testimonials">Client Testimonials</a></li>
+
+
+                    <li class="category">Extra</li>
+                    <li><a href="#how-to-upload">How To Add Thumbnail To WordPress Post</a></li>
+                    <li><a href="#how-to-add-blogs">How Create Blog Post in WordPress Block Editor</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="dynamic-section__main" data-bs-spy="scroll" data-bs-target="#site-navigation"
+            data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
+            class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+
+            <div class="dynamic-section__inner-wrapper">
+
+                <!-- Get started -->
+                <section class="doc-section" id="getting-started">
+                    <h2>INTRODUCTION</h2>
+                    <p>
+                        This Documentation guidance to update content for Studio 2.0 with step-by-step
+                        instructions
+                        and recommend the perfect image sizes for each section.
+                    </p>
+                    <p>
+                        Before we can update the site content, we need to log in to the <a
+                            href="https://www.studiotwopointo.com/wp-admin/" target="_blank"><strong>Studio
+                                admin</strong></a>. The Studio admin
+                        looks like the image
+                        below. After entering the correct user details, it will take us to the admin panel. From there,
+                        we can update the site
+                        content as needed.
+                    </p>
+                    <div class="image">
+                        <img src="assets/img/doc/login-panel.png" class="img-fluid" alt="login panel" />
+                        <div class="caption">User login panel</div>
+                    </div>
+
+                    <p>
+                        <strong>After Successfully login</strong>
+                    </p>
+
+                    <div class="image">
+                        <img src="assets/img/doc/admin-panel.png" class="img-fluid" alt="login panel" />
+                        <div class="caption">Admin panel</div>
+                    </div>
+                </section>
+
+                <!-- Logo section -->
+                <section class="doc-section" id="logo">
+                    <h2>LOGO </h2>
+                    <p>
+                        To update the site logo, we have two options: update the image or the SVG. If both are uploaded,
+                        the system will
+                        prioritize the SVG logo. If the SVG logo is not found, it will then search for the image logo.
+                    </p>
+                    <p>
+                        Here are the steps to update the logo:
+                    </p>
+
+                    <ol class="pb-4">
+                        <li>
+                            <p>Go to <strong>Appearance</strong> in side menu > <a target="_blank"
+                                    href="https://www.studiotwopointo.com/wp-admin/customize.php?return=%2Fwp-admin%2F">
+                                    <strong>Customize</strong> </a>
+                            </p>
+                            <div class="image">
+                                <img src="assets/img/doc/customize.png" class="img-fluid" alt="login panel" />
+                                <div class="caption">Cutomize</div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Click on <strong>Site Identity</strong> option from the availabel option</p>
+                        </li>
+                        <li>
+                            <p>
+                                In this step, you will find the option to upload images and SVG files.
+                            </p>
+                            <div class="image">
+                                <img src="assets/img/doc/logo-img.png" class="img-fluid" alt="login panel" />
+                                <div class="caption text-left">Click on select logo to upload imge</div>
+                            </div>
+                            <p>
+                                Please check the link for more details about the steps to upload an image
+                                <a href="#how-to-upload">How to upload Image</a>
+                            </p>
+
+                            <div class="image">
+                                <img src="assets/img/doc/logo-svg.png" class="img-fluid" alt="login panel" />
+                                <div class="caption text-left">Paste the SVG logo code here</div>
+                            </div>
+                        </li>
+                        <li>
+                            After updating one of them field click on publish button <img width="100"
+                                src="assets/img/doc/publish.png" alt="Publish" /> to update the logo
+                        </li>
+                    </ol>
+
+                    <div class="notification info">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+                            </svg>
+                        </div>
+                        <div class="contain">
+                            Recommended width of logo is <code>80px</code>. and don't forget to add width attribute in
+                            the SVG
+                            <div>
+                                <img width="200" class="img-fluid" src="assets/img/doc/logo-svg-width.png" alt="">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Menu -->
+                <section class="doc-section" id="menu">
+                    <h2>Menu</h2>
+
+                    <p>
+                        We are using the same menu for both desktop and mobile, so any updates made from the admin panel
+                        will affect both
+                        platforms.
+                    </p>
+                    <p>
+                        Here are the steps to update the Menu:
+                    </p>
+                    <ol class="pb-4">
+                        <li>
+                            <p>
+                                Go to <strong>Appearance</strong> in side menu > <a target="_blank"
+                                    href="https://www.studiotwopointo.com/wp-admin/nav-menus.php">
+                                    <strong>Menu</strong> </a>
+                            </p>
+                            <div class="image">
+                                <img src="assets/img/doc/menu.png" class="img-fluid" alt="login panel" />
+                                <div class="caption">Main menu</div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>
+                                Expand the <strong>Custom links</strong> and add the URL and link text and <strong>click
+                                    Add to
+                                    menu</strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Recently added menu items will appear at the bottom of the menu list, similar to
+                                contacts in the image below. We can also
+                                arrange the menu order.
+                            </p>
+                            <div class="image">
+                                <img src="assets/img/doc/menu-list.png" class="img-fluid" alt="login panel" />
+                                <div class="caption">Main menu</div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>
+                                As our site has a single-page design, the menu links only scroll to particular sections
+                                instead of redirecting to
+                                another page. Therefore, we need to pass the section ID in the URL as a hash value, as
+                                shown
+                                in the picture below.
+                            </p>
+                            <div class="image">
+                                <img src="assets/img/doc/menu-hash-value.png" class="img-fluid" alt="login panel" />
+                                <div class="caption">Main menu</div>
+                            </div>
+                        </li>
+                    </ol>
+
+                    <div class="notification info">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+                            </svg>
+                        </div>
+                        <div class="contain">
+                            <p class="mb-0">
+                                Available section hash values
+                            </p>
+                            <code>#about</code>,
+                            <code>#team</code>,
+                            <code>#projects</code>,
+                            <code>#latest-blogs</code>, and
+                            <code>#contacts</code>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Social media -->
+                <section class="doc-section" id="social-media-links">
+                    <h2>Social media links</h2>
+                    <p>
+                        We have the options to update the social media links inside the <strong>Appearance</strong> >
+                        <strong>Costomize</strong>. Only those social media links with a value will be displayed.
+                    </p>
+
+                    <p>Here are the steps to update the Social media links:</p>
+
+                    <ol>
+                        <li>
+                            <p>Go to <strong>Appearance</strong> in side menu > <a target="_blank"
+                                    href="https://www.studiotwopointo.com/wp-admin/customize.php?return=%2Fwp-admin%2F">
+                                    <strong>Customize</strong> </a>
+                            </p>
+                            <div class="image">
+                                <img src="assets/img/doc/customize.png" class="img-fluid" alt="login panel" />
+                                <div class="caption">Cutomize</div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>
+                                After that click on the <strong>Social media</strong> option
+                            </p>
+                            <div class="image">
+                                <img src="assets/img/doc/social-media-option.png" class="img-fluid" alt="login panel" />
+                                <div class="caption">Social media option on Costomize</div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>You will see the options to add the list of socia media links. After updating the value,
+                                click on the <strong>Publish</strong> button, and it will be reflected on the site.
+                                <img width="100" src="assets/img/doc/publish.png" alt="Publish">
+                            </p>
+                            <div class="image">
+                                <img src="assets/img/doc/social-media-links.png" class="img-fluid" alt="login panel" />
+                                <div class="caption">Social media option links update option</div>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
+
+                <!-- Main Slider -->
+                <section class="doc-section" id="banner-slider">
+                    <h2>Banner Slider</h2>
+                    <p>
+                        For the banner slider, we have a dedicated post type menu in the admin panel under
+                        <strong>Services</strong>.
+                        On the home page, we only
+                        display the title and a short description with a "learn more" button. By clicking on this link,
+                        users can discover more
+                        details about the project. Additionally, we have the ability to sort the position of the post
+                        according to the desired
+                        order.
+                    </p>
+
+                    <p>
+                        To Create a new Services follow the below steps
+                    </p>
+
+                    <ol>
+                        <li>
+                            <p>Navigate to <strong>Services</strong> menu from the side menu and click on <strong>All
+                                    Services</strong> and click on the <strong>Add New</strong> button
+                                link</p>
+                            <div class="image">
+                                <img src="assets/img/doc/services-menu.png" class="img-fluid" alt="Services menu" />
+                                <div class="caption">Create Services</div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>It brand new page where you can add the title</p>
+                            <div class="image">
+                                <img src="assets/img/doc/service-single-page.png" class="img-fluid"
+                                    alt="Services menu" />
+                                <div class="caption">Services</div>
+                            </div>
+
+                            <p>
+                                <strong>1. </strong>
+                                Add the title of service
+                            </p>
+                            <p>
+                                <strong>2. </strong>
+                                Add the description here or use the different component to add the more detail
+                                information. This will be visible only on detail page.
+                            </p>
+                            <p>
+                                <strong>3. </strong>
+                                Add the sub title of the each service. For eg <strong>What we do</strong>
+                            </p>
+                            <p>
+                                <strong>4. </strong>
+                                Option to add the image in service which will display on home page slider.
+                            </p>
+
+                            <p>
+                                <strong>5. </strong>
+                                Write the short description about this service which will be show on homepage banner.
+                                try to write short text as much as possible. if user interest on that particular service
+                                then
+                                will get detail from the detail page after clicking on learn more button.
+                            </p>
+                        </li>
+                    </ol>
+
+                    <p>
+                        To Sort the services follow the below steps
+                    </p>
+                    <ol>
+                        <li>
+                            <p>Navigate to <strong>Services</strong> and click on <strong>Re-order</strong></p>
+                            <div class="image">
+                                <img src="assets/img/doc/service-order.png" class="img-fluid" alt="Service order" />
+                                <div class="caption">Sort Order</div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>
+                                It's will list the available services and you can sort according and Click
+                                <strong>Update</strong> button.
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+
+                <!-- About Us -->
+                <section class="doc-section" id="about-us">
+                    <h2>About Us</h2>
+                    <p>
+                        To update the content in the About Us section, you can find the option in the Customize section.
+                    </p>
+                    <ol>
+                        <li>
+                            <p>Go to <strong>Appearance</strong> in side menu &gt; <a target="_blank"
+                                    href="https://www.studiotwopointo.com/wp-admin/customize.php?return=%2Fwp-admin%2F">
+                                    <strong>Customize</strong> </a>
+                            </p>
+                            <div class="image">
+                                <img src="assets/img/doc/customize.png" class="img-fluid" alt="login panel">
+                                <div class="caption">Cutomize</div>
+                            </div>
+                        </li>
+                        <li>
+                            Click on the <strong>About us</strong> option
+                            <div class="image">
+                                <img src="assets/img/doc/about-us-option.png" class="img-fluid" alt="About us option">
+                                <div class="caption">About us option</div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>
+                                List of options are appear to update the content. Fill the content according to your
+                                requirement and click on <img width="100" src="assets/img/doc/publish.png"
+                                    alt="Publish" />
+                                button to update.
+                            </p>
+                            <div class="image">
+                                <img src="assets/img/doc/about-us.png" class="img-fluid" alt="About us option">
+                                <div class="caption">About us option</div>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
+
+                <!-- Latest Project -->
+                <section class="doc-section" id="latest-projects">
+                    <h2>Latest Projects</h2>
+
+                    <p>
+                        To update project content, we have a dedicated option on the right-hand side menu called
+                        <strong>Projects</strong>. Within this option,
+                        there is an additional feature called <strong>Categories</strong>. This allows us to create the
+                        necessary categories and assign them to
+                        projects, enabling us to categorize projects under a single title.
+                    </p>
+
+                    <p> Let's first create a category, and then create a project and assign it to the category.</p>
+
+                    <ol>
+                        <li>
+                            <p>
+                                Click on <strong>Projects</strong> menu and click on <strong>Categories</strong>
+                            </p>
+                            <div class="image">
+                                <img src="assets/img/doc/project-category.png" class="img-fluid" alt="login panel">
+                                <div class="caption">Categories option</div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>
+                                Add the <strong>Name</strong>
+                            </p>
+
+                        </li>
+                        <li>
+                            <p>
+                                Add the <strong>Slug</strong> should be unique
+                            </p>
+
+                            <div class="notification info mb-4">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+                                    </svg>
+                                </div>
+                                <div class="contain">
+                                    In Case we don't have any parent so let's left the <strong>Parent Category</strong>
+                                    as None
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>
+                                Add your Category description on <strong>Description</strong> section.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Finally step, click on <strong>Add New Category</strong>. After that, the newly created
+                                category will show up on the right side of the
+                                list.
+                            </p>
+                        </li>
+                    </ol>
+
+                    <br>
+                    <br>
+                    <p>
+                        Let's move on to the next step and create the project. This process is similar to creating a
+                        slider post, so let's
+                        follow the same steps here as well.
+                    </p>
+                    <ol>
+                        <li>
+                            <p>
+                                Click on <strong>Projects</strong> click on <strong>Add New</strong>
+                            </p>
+                            <div class="image">
+                                <img src="assets/img/doc/project-add-new.png" class="img-fluid" alt="Add new project">
+                                <div class="caption">Add New project</div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>
+                                After clicked on that option we will below kind of form
+                            </p>
+                            <div class="image">
+                                <img src="assets/img/doc/project-add.png" class="img-fluid" alt="Add project form">
+                                <div class="caption">Add project form</div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>
+                                <Strong>Number 1</Strong>
+                                <br>
+                                <strong>Add title</strong> of the project
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <Strong>Number 2</Strong>
+                                <br>
+                                Add the detail information of the project. WordPress's block editor (also known as
+                                Gutenberg) allows you to create content using blocks. Each block can be a
+                                different type of content such as text, images, videos, galleries, quotes, and more.
+                                This guide will walk you through
+                                the process of adding and managing blocks in your WordPress posts.
+                            </p>
+
+                            <p>
+                                For more detail please <a href="#how-to-add-blogs">Click Here</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <Strong>Number 3</Strong>
+                                <br>
+                                Clik on <strong>Set Featured Image</strong> Section. Which allows to add image for the
+                                project.
+
+                            <p>
+                                For more detail please <a href="#how-to-upload">Click Here</a>
+                            </p>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <Strong>Number 4</Strong>
+                                <br>
+                                <strong>WRITE AN EXCERPT</strong> Section is currently optional and not in use, so you
+                                can skip this part.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <Strong>Number 5</Strong>
+                                <br>
+                                In last step, You can now public the project and it will be available <strong>All
+                                    Project</strong> menu inside the Projects menu
+                            </p>
+                        </li>
+                    </ol>
+
+                    <br>
+                    <p>
+                        Finally this a time for the assign the project in specific category for that Click on
+                        <strong>All project</strong> and click on any of the projects quick edit where you can see the
+                        project categories section check the any of the category you would like to assign the project
+                        and hit update button.
+
+                        Finally, it's time to assign the project to a specific category. To do this, click on
+                        <strong>All projects</strong> and then select
+                        <strong>Quick Edit</strong> on any of the projects. Look for the <strong></strong>Project
+                        Categories" section and select the category you want to
+                        assign to the project. After that, click on the <strong>Update</strong> button.
+                    </p>
+                    <div class="image">
+                        <img src="assets/img/doc/project-assign-quick-edit.png" class="img-fluid"
+                            alt="Add project form">
+                        <div class="caption">Project quick edit</div>
+                    </div>
+                    <div class="image">
+                        <img src="assets/img/doc/project-quick-edit.png" class="img-fluid" alt="Add project form">
+                        <div class="caption">Project Category assignment</div>
+                    </div>
+                </section>
+
+                <section class="doc-section" id="meet-out-team">
+                    <h2>Meet our team</h2>
+
+                    <p>
+                        To Add or Update Team information we have the dedicated menu <strong>Team</strong> on the right
+                        sidebar
+                    </p>
+                    <div class="image">
+                        <img src="assets/img/doc/team-add.png" class="img-fluid" alt="Add or Edit Team">
+                        <div class="caption">Add or Edit Team</div>
+                    </div>
+                    <p>
+                        Click on <strong>Add New</strong> button to add new Team member and it will redirect to team
+                        creation form
+                    </p>
+                    <div class="image">
+                        <img src="assets/img/doc/team-add-form.png" class="img-fluid" alt="Add or Edit Team">
+                        <div class="caption">Add or Edit Team</div>
+                    </div>
+
+                    <ol>
+                        <li>
+                            <p>Add Employee Name</p>
+                        </li>
+                        <li>
+                            <p>Add the Detail information of Employee. WordPress's block editor (also known as
+                                Gutenberg) allows you to create content using blocks. Each block can be a
+                                different type of content such as text, images, videos, galleries, quotes, and more.
+                                This guide will walk you through
+                                the process of adding and managing blocks in your WordPress posts.</p>
+                            <p>
+                                For more detail please <a href="#how-to-add-blogs">Click Here</a>
+                            </p>
+                        </li>
+                        <li>
+                            Add the Designation of team member
+                        </li>
+                        <li>
+                            <strong>Set Feature Image</strong> Add Team member image for the home page
+                        </li>
+                        <li>
+                            <strong>Add Image</strong> Add Team member image for Single Detail page
+                        </li>
+                        <li>
+                            And finally, click the publish button to show the new team member on the homepage. After
+                            clicking the publish button, it will appear on the team list page.
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="doc-section" id="client-testimonials">
+                    <h2>Client Testimonials</h2>
+
+                    <p>
+                        Client testimonials
+                    </p>
+                </section>
+
+                <section class="doc-section" id="how-to-upload">
+                    <h2>Create Blog Post in WordPress Block Editor</h2>
+
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" width="800" height="450"
+                            src="https://www.youtube.com/embed/mGzt0QDogXI?si=dyQGpWSgSq3CI0J8&amp;start=292"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </section>
+
+                <section class="doc-section" id="how-to-add-blogs">
+                    <h2>How Create Blog Post in WordPress Block Editor</h2>
+
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" width="800" height="450"
+                            src="https://www.youtube.com/embed/qzKoFZtnRqo?si=JXz9lIMLPJ1e9MfA&amp;start=292"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </section>
+
+            </div>
+
+
+
+        </main>
+
+    </div>
+
+
+
+
+
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="assets/vendors/fancybox/fancybox.min.js"></script>
+    <script src="assets/js/doc.js"></script>
+</body>
+
+</html>

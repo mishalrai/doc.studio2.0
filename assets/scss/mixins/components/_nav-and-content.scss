@@ -1,0 +1,121 @@
+%reset-ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+%reset-a {
+  text-decoration: none;
+
+  &:focus,
+  &:visited {
+    color: inherit;
+  }
+}
+
+@mixin nav-and-content(
+  $nav-width: 300px,
+  $top-gap: 90px,
+  $content-gap-x: 30px,
+  $content-gap-y: 0,
+  $link-color: #707070,
+  $active-icon-size: 10px,
+  $active-icon-color: #000000
+) {
+  & {
+    &__navigation {
+      position: fixed;
+      left: 0;
+      top: $top-gap;
+      padding-left: $content-gap-x;
+      padding-right: $content-gap-x;
+      height: calc(100% - #{$top-gap});
+      width: $nav-width;
+      border: 1px solid #ddd;
+      overflow: auto;
+
+      ul {
+        @extend %reset-ul;
+      }
+
+      a {
+        color: $link-color;
+        display: block;
+        transition: all 0.2s;
+        position: relative;
+        margin-bottom: 0.2rem;
+        font-size: 0.95em;
+        margin-left: 0.5rem;
+        padding-left: 1.2rem;
+
+        @extend %reset-a;
+
+        &:after {
+          content: "";
+          top: 50%;
+          width: $active-icon-size;
+          height: $active-icon-size;
+          // background-color: $active-icon-color;
+          border-radius: 50%;
+          left: 0;
+          position: absolute;
+          transform: translateY(-50%);
+          border: 2px solid #ddd;
+          // opacity: 0;
+        }
+
+        &:hover,
+        &.active {
+          font-weight: bold;
+          color: $active-icon-color;
+
+          &::after {
+            opacity: 1;
+            background-color: $active-icon-color;
+            border-color: $active-icon-color;
+          }
+        }
+      }
+    }
+
+    .category {
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &__main {
+      margin-left: $nav-width;
+      padding-left: $content-gap-x;
+      padding-right: $content-gap-x;
+      padding-top: $content-gap-y;
+      padding-bottom: $content-gap-y;
+
+      h2 {
+        margin-bottom: 3rem;
+      }
+    }
+
+    &__inner-wrapper {
+      max-width: 100%;
+      width: 700px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+
+      h4 {
+        font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      p {
+        color: #515151;
+        font-family: source-serif-pro, Georgia, Cambria, "Times New Roman",
+          Times, serif;
+
+        > * {
+          color: #000;
+        }
+      }
+    }
+  }
+}

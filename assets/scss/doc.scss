@@ -1,0 +1,33 @@
+@import "variables";
+@import "typography";
+
+// Global style
+@import "global";
+
+// Mixin
+@import "mixins/utils/media-queries";
+@import "mixins/utils/clearfix";
+
+// Classes
+@import "classes/image.scss";
+@import "classes/notification.scss";
+
+@import "mixins/components/header";
+@import "mixins/components/nav-and-content";
+@import "mixins/components/section";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  @include header();
+}
+
+.dynamic-section {
+  @include nav-and-content();
+}
+
+.doc-section {
+  @include section();
+}
